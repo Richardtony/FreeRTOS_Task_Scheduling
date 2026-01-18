@@ -1,5 +1,5 @@
 # FreeRTOS_Task_Scheduling
-This repository consists of an experiment which demonstrates the effect of time-slicing in FreeRTOS applications.
+This repository consists of an experiment which demonstrates the effect of time-slicing in FreeRTOS applications. For a literature context, refer (https://medium.com/@richardtony54/freertos-time-slicing-and-its-consequences-in-preemptive-scheduling-68f36f0a2481)
 ## Setup Guide:
 - To setup this application, you need to first download:
   - [STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html#st-get-software)
@@ -28,7 +28,7 @@ Connect your STM32 board to your PC/Laptop and click on the following settings:
 - Select `Run->Debug Configurations`.
     
   - <img width="1454" height="927" alt="Screenshot (4)" src="https://github.com/user-attachments/assets/ba0601c2-de43-4212-be1c-0950aa98a8a8" />
-- Ensure that `SWD` is selected as your target interface and `SWO` is enabled. Enter the `Core Clock (MHZ)` value as per your MCU's core clock configuration in the `FreeRTOS_Task_Scheduling.ioc` file.
+- Ensure that `SWD` is selected as your target interface and `SWV` is enabled. Enter the `Core Clock (MHZ)` value as per your MCU's core clock configuration in the `FreeRTOS_Task_Scheduling.ioc` file.
 - Once configured, click on Apply and then Debug.
 - The IDE will then shift onto a debug window, click on `Window->Show View->Expressions`, `Window->Show View->Memory Browser` and `Window->Show View->Other->SWV->SWV ITM Data Console`.
 - In the Expressions tab, add a new expression named `_SEGGER_RTT` and monitor the `_SEGGER_RTT->aUp[1]->pBuffer` variable.
