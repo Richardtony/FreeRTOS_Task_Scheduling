@@ -19,6 +19,7 @@ This repository consists of an experiment which demonstrates the effect of time-
     - Project
     - Code Generator
 - Launch **STM32CubeIDE** and select your workspace folder.
+- **NOTE:** If you are porting this application on another controller, I recommend to compare the source files in the repository with your generated source and make the changes according to the diff.
 - Build the project by selecting `Project->Build Project` or right click on the project and select `Build Project`.
 
 ## Debugging Guide:
